@@ -1,0 +1,12 @@
+#Git ignore
+#Ignoring files with the following formats.
+*.BAM
+*.bam
+*.SAM
+*.sam
+*.fa
+*.fq
+*.fasta
+*.fastq
+*.gz
+*.zip

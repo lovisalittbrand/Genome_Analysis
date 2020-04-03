@@ -1,0 +1,14 @@
+#!/bin/bash
+#Script containing code for creating soft links to be able to run analyses in Home directory
+
+#Copying DNA-files through soft links into home directory
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz  
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz  
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz    
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz
+
+#Copying RNA-files through soft links into home directory
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/RNA_untrimmed/SRR4342137.1.fastq.gz  
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/RNA_untrimmed/SRR4342139.1.fastq.gz  
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/RNA_untrimmed/SRR4342137.2.fastq.gz      
+ln -s /proj/g2020008/nobackup/private/4_Thrash_2017/RNA_untrimmed/SRR4342139.2.fastq.gz

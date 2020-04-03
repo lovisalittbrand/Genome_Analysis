@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Connecting to a working node through reservation-code 
+salloc -A g2020008 -p core -n 2 -t 02:15:00 --reservation=g2020008_03
+
+#Loading appropriate modules for running FastQC
+module load bioinfo-tools
+module load FastQC/0.11.8
+
+#Commands for running FastQC on DNA-files
+fastqc -t 2 -f fastq -o /home/lovilitt/Genome_Analysis/analyses/01_preprocessing/reads_QC_DNA /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz
+
+#Commands for running FastQC on RNA-files
+fastqc -t 2 -f fastq -o /home/lovilitt/Genome_Analysis/analyses/01_preprocessing/reads_QC_RNA /home/lovilitt/Genome_Analysis/raw_data/RNA_untrimmed/SRR4342137.1.fastq.gz /home/lovilitt/Genome_Analysis/raw_data/RNA_untrimmed/SRR4342139.1.fastq.gz /home/lovilitt/Genome_Analysis/raw_data/RNA_untrimmed/SRR4342137.2.fastq.gz /home/lovilitt/Genome_Analysis/raw_data/RNA_untrimmed/SRR4342139.2.fastq.gz
+
+
