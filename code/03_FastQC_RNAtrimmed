@@ -14,5 +14,5 @@ module load bioinfo-tools
 module load FastQC/0.11.8
 
 #Commands for running quality control on trimmed reads
-fastqc -t 2 -f fastq -o /home/lovilitt/Genome_Analysis/analyses/02_RNATrimmed/FastQC_RNA_trimmed /home/lovilitt/Genome_Analysis/analyses/02_RNATrimmed/*.fastq.gz
+fastqc -t 2 -f fastq -o /home/lovilitt/Genome_Analysis/analyses/02_RNATrimmed/RNATrimmed_2/FastQC_RNA_trimmed /home/lovilitt/Genome_Analysis/analyses/02_RNATrimmed/RNATrimmed_2/*.fastq.gz
 
