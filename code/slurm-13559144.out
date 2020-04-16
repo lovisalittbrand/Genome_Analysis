@@ -1,0 +1,20 @@
+125.0Gb memory in total.
+Using: 112.828Gb.
+MEGAHIT v1.1.2
+--- [Thu Apr 16 07:22:44 2020] Start assembly. Number of CPU threads 2 ---
+--- [Thu Apr 16 07:22:44 2020] Available memory: 134609518592, used: 121148566732
+--- [Thu Apr 16 07:22:44 2020] Converting reads to binaries ---
+    [read_lib_functions-inl.h  : 209]     Lib 0 (/home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz,/home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz): pe, 48110692 reads, 101 max length
+    [utils.h                   : 126]     Real: 140.7925	user: 46.9498	sys: 6.0919	maxrss: 152812
+--- [Thu Apr 16 07:25:08 2020] k list: 65,75,85,95,105 ---
+--- [Thu Apr 16 07:25:08 2020] Extracting solid (k+1)-mers and building sdbg for k = 65 ---
+--- [Thu Apr 16 08:02:37 2020] Assembling contigs from SdBG for k = 65 ---
+--- [Thu Apr 16 08:25:16 2020] Local assembling k = 65 ---
+--- [Thu Apr 16 08:48:47 2020] Extracting iterative edges from k = 65 to 75 ---
+--- [Thu Apr 16 08:57:08 2020] Building graph for k = 75 ---
+--- [Thu Apr 16 08:59:15 2020] Assembling contigs from SdBG for k = 75 ---
+--- [Thu Apr 16 09:08:11 2020] Local assembling k = 75 ---
+--- [Thu Apr 16 09:27:03 2020] Extracting iterative edges from k = 75 to 85 ---
+--- [Thu Apr 16 09:33:35 2020] Building graph for k = 85 ---
+--- [Thu Apr 16 09:35:29 2020] Assembling contigs from SdBG for k = 85 ---
+--- [Thu Apr 16 09:43:36 2020] Local assembling k = 85 ---
