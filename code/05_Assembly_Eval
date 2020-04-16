@@ -1,1 +1,19 @@
+#!/bin/bash -l
 
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 02:00:00
+#SBATCH -J LovisaLittbrand_AssemblyEval
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#Loading appropriate modules for quality check of assembly
+module load bioinfo-tools
+module load quast
+
+#Commands for running the quality check of assemblies
+metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/03_assembly/SiteD3/final.contigs.fa \
+-o /home/lovilitt/Genome_Analysis/analyses/04_assembly_eval/SiteD3_Eval \
+-1 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz \
+-2 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz 
