@@ -3,22 +3,35 @@ genome_analysis_git/
 |    |---01_preprocessing
 |    |    |---reads_QC_DNA
 |    |    |---reads_QC_RNA
-|    |---02_genome_assembly
-|    |---03_assembly_evaluation
-|    |---04_binning
-|    |---05_binning_evaluation
+|    |---02_RNATrimmed
+|    |    |---RNATrimmed_1
+|    |    |    |---FastQC_RNA_trimmed
+|    |    |---RNATrimmed_2
+|    |    |    |---FastQC_RNA_trimmed
+|    |---03_assembly
+|    |---03b_assembly
+|    |---04_assembly_eval
+|    |    |---SiteD1_Eval
+|    |    |---SiteD3_Eval
+|    |---05_binning
+|    |---06_binning_evaluation
 |    |    |---MetaQuast
 |    |    |---CheckM
-|    |---06_functional_annotation
-|    |---07_activity_analysis
+|    |---07_functional_annotation
+|    |---08_activity_analysis
 |    |    |---aligned_reads
 |    |    |---counting
-|    |---08_phylogenetic_placement
+|    |---09_phylogenetic_placement
 |
 |----code
 |    |---00_SetUp
 |    |—--01_FastQC
+|    |—--02_RNAtrimming
+|    |—--03_FastQC_RNAtrimmed
+|    |—--04_Assembly
+|    |—--05_Assembly_Eval
 |
 |----data
 |    |---raw_data
 |    |---metadata
+
