@@ -1,7 +1,0 @@
-125.0Gb memory in total.
-Using: 112.828Gb.
-MEGAHIT v1.1.2
---- [Wed Apr 15 23:40:07 2020] Start assembly. Number of CPU threads 2 ---
---- [Wed Apr 15 23:40:07 2020] Available memory: 134609510400, used: 121148559360
---- [Wed Apr 15 23:40:07 2020] Converting reads to binaries ---
-slurmstepd: error: *** JOB 13555892 ON r39 CANCELLED AT 2020-04-15T23:41:49 ***
