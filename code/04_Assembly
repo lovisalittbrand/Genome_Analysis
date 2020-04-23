@@ -1,0 +1,30 @@
+#!/bin/bash -l
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 12:00:00
+#SBATCH -J LovisaLittbrand_Assembly
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#Loading appropriate modules for assembly
+module load bioinfo-tools
+module load megahit
+
+#Commands for running DNA assembly separately
+#megahit -t 2 --kmin-1pass --k-min 65 --k-max 105 --k-step 10 \
+#-1 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz \
+#-2 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz \
+#-o /home/lovilitt/Genome_Analysis/analyses/03b_assembly/Site_D1
+
+#megahit -t 2 --kmin-1pass --k-min 65 --k-max 105 --k-step 10 \
+#-1 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz \
+#-2 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz \
+#-o /home/lovilitt/Genome_Analysis/analyses/03b_assembly/Site_D3
+
+#Commands for running DNA assembly with pooled reads
+megahit -t 2 --kmin-1pass --k-min 65 --k-max 105 --k-step 10 \
+-1 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz,/home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz \
+-2 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz,/home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz \
+-o /home/lovilitt/Genome_Analysis/analyses/03a_assembly/
+ 

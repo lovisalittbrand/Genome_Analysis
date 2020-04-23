@@ -1,0 +1,31 @@
+#!/bin/bash -l
+
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 03:00:00
+#SBATCH -J LovisaLittbrand_AssemblyEval
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#Loading appropriate modules for quality check of assembly
+module load bioinfo-tools
+module load quast/4.5.4
+
+##Commands for running the quality check of not-pooled assemblies
+#metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/03b_assembly/Site_D3/final.contigs.fa \
+#-o /home/lovilitt/Genome_Analysis/analyses/04_assembly_eval/SiteD3_Eval \
+#-1 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz \
+#-2 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz 
+
+#metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/03b_assembly/Site_D1/final.contigs.fa \
+#-o /home/lovilitt/Genome_Analysis/analyses/04_assembly_eval/SiteD1_Eval \
+#-1 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz \
+#-2 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz
+
+##Commands for running the quality check of pooled assemblies
+metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/03a_assembly/final.contigs.fa \
+-o /home/lovilitt/Genome_Analysis/analyses/04_assembly_eval_pooled \
+-1 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz,/home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz \
+-2 /home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz,/home/lovilitt/Genome_Analysis/raw_data/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz \
+
