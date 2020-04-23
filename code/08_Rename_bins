@@ -1,0 +1,8 @@
+#Bash-command for renaming the bin-files to remove a dot which CheckM will complain about.
+#Changing name from bin.1.fa to bin_1.fa 
+
+for f in *.*.fa;
+do 
+ mv -i "${f}" "${f/./_}";
+done 
+

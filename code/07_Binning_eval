@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 03:00:00
+#SBATCH -J LovisaLittbrand_Binning_Evaluation
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#Loading appropriate modules
+module load bioinfo-tools
+module load CheckM/1.0.12
+
+##Commands for running binning evaluation from pooled assembly
+checkm lineage_wf -t 4 --reduced_tree -x fa /home/lovilitt/Genome_Analysis/analyses/05a_binning /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/checkM
+
+##Commands for running binning evaluation from non-pooled assembly

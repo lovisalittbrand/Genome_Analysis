@@ -1,0 +1,20 @@
+#!/bin/bash -l
+
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 02:00:00
+#SBATCH -J LovisaLittbrand_Binning
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#Loading appropriate modules for quality check of assembly
+module load bioinfo-tools
+module load MetaBat
+
+#Commands for binning contigs from assembly when reads were not pooled
+#metabat2 -t 2 -i /home/lovilitt/Genome_Analysis/analyses/03b_assembly/Site_D1/final.contigs.fa -o /home/lovilitt/Genome_Analysis/analyses/05b_binning/bins_SiteD1/bin
+#metabat2 -t 2 -i /home/lovilitt/Genome_Analysis/analyses/03b_assembly/Site_D3/final.contigs.fa -o /home/lovilitt/Genome_Analysis/analyses/05b_binning/bins_SiteD3/bin 
+
+##Commands for binning contigs from pooled assembly
+metabat2 -t 2 -i /home/lovilitt/Genome_Analysis/analyses/03a_assembly/final.contigs.fa -o /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin
