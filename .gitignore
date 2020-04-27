@@ -8,5 +8,6 @@
 *.fq
 *.fasta
 *.fastq
+*.faa
 *.gz
 *.zip
