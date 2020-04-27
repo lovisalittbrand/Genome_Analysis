@@ -1,0 +1,24 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+k105_124520_3        -            571 Ribosomal_S13        PF00416.17   107    0.0002   16.1   0.2   1   3   0.00019     0.049    8.4   0.0    16    55    53    92    44    97 0.87 # 1580 # 3292 # -1 # ID=34_3;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.564
+k105_124520_3        -            571 Ribosomal_S13        PF00416.17   107    0.0002   16.1   0.2   2   3     0.053        14    0.5   0.0    18    47    95   124    89   132 0.81 # 1580 # 3292 # -1 # ID=34_3;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.564
+k105_124520_3        -            571 Ribosomal_S13        PF00416.17   107    0.0002   16.1   0.2   3   3    0.0094       2.4    2.9   0.0    15    40   127   152   111   165 0.79 # 1580 # 3292 # -1 # ID=34_3;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.564
+k105_234626_3        -            456 Rho_RNA_bind         PF07497.7     78   1.6e-40  130.9   0.0   1   1   1.1e-42   2.7e-40  130.1   0.0     1    77    85   161    85   162 0.98 # 1299 # 2666 # -1 # ID=61_3;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=11-12bp;gc_cont=0.556
+k105_95347_2         -            162 RNA_pol_L            PF01193.19    66   0.00096   12.5   0.0   1   1   4.5e-06    0.0012   12.3   0.0    31    56    53   128     8   136 0.74 # 1139 # 1624 # -1 # ID=27_2;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.531
+k105_511_2           -            296 TIGR00755            TIGR00755    256     2e-05   17.9   0.0   1   1   2.6e-07   3.4e-05   17.1   0.0    16   104   109   199   106   205 0.77 # 791 # 1678 # 1 # ID=1_2;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=3-4bp;gc_cont=0.563
+k105_124520_1        -            253 TIGR00755            TIGR00755    256   0.00037   13.7   0.2   1   1   4.7e-06   0.00061   13.0   0.2    18    76    80   141    75   151 0.83 # 1 # 759 # -1 # ID=34_1;partial=10;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.539
+k105_234626_3        -            456 OB_RNB               PF08206.6     58   0.00014   15.6   0.0   1   1   1.1e-06   0.00029   14.6   0.0     1    30    89   123    89   125 0.89 # 1299 # 2666 # -1 # ID=61_3;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=11-12bp;gc_cont=0.556
+k105_170621_1        -            322 tRNA_anti_2          PF13742.1     99   1.4e-05   19.1   0.0   1   1   1.4e-07   3.7e-05   17.8   0.0    36    97    24    83    19    85 0.81 # 219 # 1184 # 1 # ID=44_1;partial=00;start_type=GTG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.533
+k105_170621_1        -            322 tRNA_anti-codon      PF01336.20    75   1.6e-11   38.2   0.0   1   1   1.3e-13   3.5e-11   37.1   0.0    20    72    33    83    22    85 0.95 # 219 # 1184 # 1 # ID=44_1;partial=00;start_type=GTG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.533
+k105_206519_2        -            675 DNA_ligase_OB        PF03120.11    82   7.1e-35  112.9   1.2   1   1   5.7e-37   1.5e-34  111.8   1.2     2    82   320   400   319   400 0.98 # 429 # 2453 # -1 # ID=54_2;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.559
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /scratch/13855033/44781650-776a-4406-9804-8b51fd41d413
+# Target file:     /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/checkM/bins/bin_3/genes.faa
+# Option settings: hmmsearch --domtblout /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/checkM/bins/bin_3/hmmer.analyze.txt --noali --notextw -E 0.1 --domE 0.1 --cpu 1 /scratch/13855033/44781650-776a-4406-9804-8b51fd41d413 /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/checkM/bins/bin_3/genes.faa 
+# Current dir:     /domus/h1/lovilitt/Genome_Analysis/code
+# Date:            Thu Apr 23 12:04:58 2020
+# [ok]

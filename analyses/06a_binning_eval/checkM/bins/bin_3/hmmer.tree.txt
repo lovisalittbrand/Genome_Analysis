@@ -1,0 +1,13 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /scratch/13855033/2bb30aea-f503-4afe-8361-eb25ab73a0ac
+# Target file:     /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/checkM/bins/bin_3/genes.faa
+# Option settings: hmmsearch --domtblout /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/checkM/bins/bin_3/hmmer.tree.txt --noali --notextw -E 0.1 --domE 0.1 --cpu 1 /scratch/13855033/2bb30aea-f503-4afe-8361-eb25ab73a0ac /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/checkM/bins/bin_3/genes.faa 
+# Current dir:     /domus/h1/lovilitt/Genome_Analysis/code
+# Date:            Thu Apr 23 11:56:36 2020
+# [ok]
