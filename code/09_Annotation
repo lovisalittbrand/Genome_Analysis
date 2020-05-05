@@ -1,0 +1,47 @@
+#!/bin/bash -l
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 02:00:00
+#SBATCH -J LovisaLittbrand_annotation
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#This script will perform the annotation of the produced bins
+
+#Loading appropriate modules
+module load bioinfo-tools
+module load prokka/1.12-12547ca
+
+#Commands for running the annotation
+#Archaeal species
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_4.fa --kingdom Archaea --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_4 --prefix bin_4 
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_11.fa --kingdom Archaea --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_11 --prefix bin_11 
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_18.fa --kingdom Archaea --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_18 --prefix bin_18
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_26.fa --kingdom Archaea --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_26 --prefix bin_26
+
+#Bacterial/unknown species
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_1.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_1 --prefix bin_1 
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_2.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_2 --prefix bin_2
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_3.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_3 --prefix bin_3
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_5.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_5 --prefix bin_5
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_6.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_6 --prefix bin_6
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_7.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_7 --prefix bin_7
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_8.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_8 --prefix bin_8
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_9.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_9 --prefix bin_9
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_10.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_10 --prefix bin_10
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_12.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_12 --prefix bin_12
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_13.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_13 --prefix bin_13
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_14.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_14 --prefix bin_14
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_15.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_15 --prefix bin_15
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_16.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_16 --prefix bin_16
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_17.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_17 --prefix bin_17
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_19.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_19 --prefix bin_19
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_20.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_20 --prefix bin_20
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_21.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_21 --prefix bin_21
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_22.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_22 --prefix bin_22
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_23 --prefix bin_23
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_24.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_24 --prefix bin_24
+prokka /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_25.fa --outdir /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_25 --prefix bin_25
+
+
