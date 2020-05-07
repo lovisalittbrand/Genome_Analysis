@@ -40,5 +40,5 @@ ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $outdir/taxcura
 cd $outdir
 
 #Commands for running phylophlan
-phylophlan -i metagenome --nproc 2
+phylophlan -t -i metagenome --nproc 2
 

@@ -8,20 +8,19 @@ genome_analysis_git/
 |    |    |    |---FastQC_RNA_trimmed
 |    |    |---RNATrimmed_2
 |    |    |    |---FastQC_RNA_trimmed
-|    |---03_assembly
+|    |---03a_assembly
 |    |---03b_assembly
 |    |---04_assembly_eval
 |    |    |---SiteD1_Eval
 |    |    |---SiteD3_Eval
-|    |---05_binning
-|    |---06_binning_evaluation
+|    |---05a_binning
+|    |---05b_binning
+|    |---06a_binning_evaluation
 |    |    |---MetaQuast
 |    |    |---CheckM
-|    |---07_functional_annotation
-|    |---08_activity_analysis
-|    |    |---aligned_reads
-|    |    |---counting
-|    |---09_phylogenetic_placement
+|    |---07a_annotation
+|    |---08a_mapping
+|    |---09a_counting
 |
 |----code
 |    |---00_SetUp
@@ -30,8 +29,17 @@ genome_analysis_git/
 |    |—--03_FastQC_RNAtrimmed
 |    |—--04_Assembly
 |    |—--05_Assembly_Eval
+|    |—--06_Binning
+|    |—--07_Binning_eval_checkm
+|    |—--07_Binning_eval_metaquast
+|    |—--08_Rename_bins
+|    |—--09_Annotation
+|    |—--10_Mapping
+|    |—--11_Counting
+|    |—--12_Phylogeny
 |
 |----data
 |    |---raw_data
 |    |---metadata
 
+Note: Option a in analyses corresponds to analysis run when pooling the reads. Option b corresponds to analysis with non-pooled reads.
