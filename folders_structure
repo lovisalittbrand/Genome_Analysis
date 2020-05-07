@@ -13,6 +13,7 @@ genome_analysis_git/
 |    |---04_assembly_eval
 |    |    |---SiteD1_Eval
 |    |    |---SiteD3_Eval
+|    |---04_assembly_eval_pooled
 |    |---05a_binning
 |    |---05b_binning
 |    |---06a_binning_evaluation
