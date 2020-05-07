@@ -1,0 +1,26 @@
+#!/bin/bash -l
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 06:00:00
+#SBATCH -J LovisaLittbrand_Counting
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#This script will perform the counting of the mapped reads
+
+#Loading appropriate modules for quality check of assembly
+module load bioinfo-tools
+module load htseq
+
+#Commands for counting the reads after mapping
+bin_list = ('bin_1', 'bin_2', 'bin_3', 'bin_4', 'bin_5', 'bin_6', 'bin_7', 'bin_8', 'bin_9', 'bin_10', 'bin_11', 'bin_12', 'bin_13', 'bin_14', 'bin_15', 'bin_16', 'bin_17', 'bin_18', 'bin_19', 'bin_20', 'bin_21', 'bin_22', 'bin_23', 'bin_24', 'bin_25', 'bin_26')
+path_mapping = /home/lovilitt/Genome_Analysis/analyses/08a_mapping
+path_annotation = /home/lovilitt/Genome_Analysis/analyses/07a_annotation
+path_output = /home/lovilitt/Genome_Analysis/analyses/09a_counting
+
+for bin in "${bin_list[@]}";
+do
+ htseq-count -f bam -r pos -i ID -t CDS ${path_mapping}/${bin}_sorted_SiteD1.bam ${path_annotation}/${bin}/${bin}.gff > ${path_output}/${bin}_count_SiteD1.out
+ htseq-count -f bam -r pos -i ID -t CDS ${path_mapping}/${bin}_sorted_SiteD3.bam ${path_annotation}/${bin}/${bin}.gff > ${path_output}/${bin}_count_SiteD3.out  
+done
