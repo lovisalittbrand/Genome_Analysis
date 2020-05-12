@@ -15,37 +15,33 @@ module load bwa
 module load samtools 
 
 #Commands for running the mapping
-path_RNA = /home/lovilitt/Genome_Analysis/analyses/02_RNATrimmed/RNATrimmed_2
-path_output = /home/lovilitt/Genome_Analysis/analyses/08a_mapping
+path_RNA="/home/lovilitt/Genome_Analysis/analyses/02_RNATrimmed/RNATrimmed_1"
+path_output="/home/lovilitt/Genome_Analysis/analyses/08a_mapping"
 
 for x in /home/lovilitt/Genome_Analysis/analyses/05a_binning/*.fa;
 do 
- file_name = ${x##*/}
- bin_nr = ${file_name/.fa/}  
+file_name=${x##*/}
+bin_nr=${file_name/.fa/}  
 
- #Running the mapping in two rounds giving the reads from different sites separately
- bwa index $bin_nr
- bwa mem -t 2 -P $x \
- $path_RNA/SRR4342137.1.trim_paired.fastq.gz \
- $path_RNA/SRR4342137.2.trim_paired.fastq.gz \
- -o $path_output/${bin_nr}_mapped_SiteD1.sam
+if [[ $bin_nr == bin_1 || $bin_nr == bin_2 || $bin_nr == bin_6 || $bin_nr == bin_7 || $bin_nr == bin_12 || $bin_nr == bin_16 || $bin_nr == bin_19 || $bin_nr == bin_24 || $bin_nr == bin_26 ]]
+then
+#Running the mapping in two rounds giving the reads from different sites separately
+bwa index $x
+bwa mem -t 2 -P $x ${path_RNA}/SRR4342137.1.trim_paired.fastq.gz ${path_RNA}/SRR4342137.2.trim_paired.fastq.gz > ${path_output}/${bin_nr}_mapped_SiteD1.sam
 
- bwa index $bin_nr
- bwa mem -t 2 -P $x \
- $path_RNA/SRR4342139.1.trim_paired.fastq.gz \
- $path_RNA/SRR4342139.2.trim_paired.fastq.gz \
- -o $path_output/${bin_nr}_mapped_SiteD3.sam
+bwa index $x
+bwa mem -t 2 -P $x ${path_RNA}/SRR4342139.1.trim_paired.fastq.gz ${path_RNA}/SRR4342139.2.trim_paired.fastq.gz > ${path_output}/${bin_nr}_mapped_SiteD3.sam
 
- #Converting sam-files to sorted bam-files and removing old and intermediate files
- samtools view -b $path_output/${bin_nr}_mapped_SiteD3.sam -o $path_output/${bin_nr}_mapped_SiteD3.bam
- samtools sort -@ 2 $path_output/${bin_nr}_mapped_SiteD3.bam -o $path_output/${bin_nr}_sorted_SiteD3.bam
+#Converting sam-files to sorted bam-files and removing old and intermediate files
+samtools view -b ${path_output}/${bin_nr}_mapped_SiteD3.sam > ${path_output}/${bin_nr}_mapped_SiteD3.bam
+samtools sort -@ 2 ${path_output}/${bin_nr}_mapped_SiteD3.bam > ${path_output}/${bin_nr}_sorted_SiteD3.bam
  
- samtools view -b $path_output/${bin_nr}_mapped_SiteD1.sam -o $path_output/${bin_nr}_mapped_SiteD1.bam
- samtools sort -@ 2 $path_output/${bin_nr}_mapped_SiteD1.bam -o $path_output/${bin_nr}_sorted_SiteD1.bam
+samtools view -b ${path_output}/${bin_nr}_mapped_SiteD1.sam > ${path_output}/${bin_nr}_mapped_SiteD1.bam
+samtools sort -@ 2 ${path_output}/${bin_nr}_mapped_SiteD1.bam > ${path_output}/${bin_nr}_sorted_SiteD1.bam
 
- rm $path_output/${bin_nr}_mapped_SiteD1.sam
- rm $path_output/${bin_nr}_mapped_SiteD3.sam
- rm $path_output/${bin_nr}_mapped_SiteD1.bam 
- rm $path_output/${bin_nr}_mapped_SiteD3.bam 
-
+rm ${path_output}/${bin_nr}_mapped_SiteD1.sam
+rm ${path_output}/${bin_nr}_mapped_SiteD3.sam
+rm ${path_output}/${bin_nr}_mapped_SiteD1.bam 
+rm ${path_output}/${bin_nr}_mapped_SiteD3.bam
+fi;
 done
