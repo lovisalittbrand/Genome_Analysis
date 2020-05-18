@@ -12,33 +12,32 @@ module load bioinfo-tools
 module load phylophlan
 module load FastTree
 module load usearch/5.2.32
-module load biopython
 module load muscle
 
 #Directory of where results will be stored
-outdir = /home/lovilitt/Genome_Analysis/analyses/10a_phylogeny
+outdir=/home/lovilitt/Genome_Analysis/analyses/10a_phylogeny
 
 #Creating directories needed for Phylophlan
 mkdir -p $outdir/input/metagenome
 mkdir -p $outdir/output
 mkdir -p $outdir/data/ppaalns
+mkdir -p $outdir/taxcuration
 
 #Symlinks to input data files
-#Enough with folder or specify file from annotation???
-for folder in /home/lovilitt/Genome_Analysis/analyses/07a_annotation/*
+for bin in /home/lovilitt/Genome_Analysis/analyses/07a_annotation/*;
 do
- ln -sf $folder $outdir/input/metagenome/
+ ln -sf ${bin}/*.faa $outdir/input/metagenome/
 done
 
 #Symlinks phylophlan data files
 ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/*.bz2 $outdir/data/
 ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppaalns/*.bz2 $outdir/data/ppaalns/
 ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppafull.tax.txt $outdir/data/
-ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $outdir/taxcuration
+ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $outdir/taxcuration/
 
 #Phylophlan needs to be run from specific directory
 cd $outdir
 
 #Commands for running phylophlan
-phylophlan -t -i metagenome --nproc 2
+phylophlan.py -t -i metagenome --nproc 2
 
