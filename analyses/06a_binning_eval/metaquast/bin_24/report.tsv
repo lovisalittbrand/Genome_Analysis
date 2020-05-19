@@ -1,0 +1,22 @@
+Assembly	bin_24
+# contigs (>= 0 bp)	297
+# contigs (>= 1000 bp)	297
+# contigs (>= 5000 bp)	195
+# contigs (>= 10000 bp)	89
+# contigs (>= 25000 bp)	14
+# contigs (>= 50000 bp)	0
+Total length (>= 0 bp)	2664337
+Total length (>= 1000 bp)	2664337
+Total length (>= 5000 bp)	2301575
+Total length (>= 10000 bp)	1543067
+Total length (>= 25000 bp)	469867
+Total length (>= 50000 bp)	0
+# contigs	297
+Largest contig	46788
+Total length	2664337
+GC (%)	45.72
+N50	11898
+N75	7079
+L50	70
+L75	145
+# N's per 100 kbp	0.00

@@ -1,0 +1,61 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/quast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23 --labels bin_23
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2020-05-19 12:50:05
+
+Logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/quast.log
+NOTICE: Output directory already exists. Existing Nucmer alignments can be used
+
+CWD: /domus/h1/lovilitt/Genome_Analysis/code
+Main parameters: 
+  Threads: 2, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa ==> bin_23
+
+2020-05-19 12:50:05
+Running Basic statistics processor...
+  Contig files: 
+    bin_23
+  Calculating N50 and L50...
+    bin_23, N50 = 4966, L50 = 249, Total length = 4040309, GC % = 61.79, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/basic_stats/GC_content_plot.pdf
+  Drawing bin_23 GC content plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/basic_stats/bin_23_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2020-05-19 12:50:07
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2020-05-19 12:50:07
+RESULTS:
+  Text versions of total report are saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/report.html
+  PDF version (tables and plots) is saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/report.pdf
+  Icarus (contig browser) is saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/icarus.html
+  Log saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/quast.log
+
+Finished: 2020-05-19 12:50:07
+Elapsed time: 0:00:02.300618
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

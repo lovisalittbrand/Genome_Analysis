@@ -1,0 +1,31 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_1.fa -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_1
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2020-05-19 12:36:16
+
+Logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_1/metaquast.log
+
+Contigs:
+  Pre-processing...
+  /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_1.fa ==> bin_1
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2020-05-19 12:36:18
+  Using existing BLAST alignments for bin_1... 
+
+
+
+
+2020-05-19 12:36:18
+Trying to download found references from NCBI. Totally 1 organisms to try.
+  marine_metagenome | not found in the NCBI database
+Reference genomes are not found.
+
+NOTICE: No references are provided, starting regular QUAST with MetaGeneMark gene finder

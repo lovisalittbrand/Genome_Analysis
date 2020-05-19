@@ -1,0 +1,112 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_15.fa -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2020-05-19 12:46:12
+
+Logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/metaquast.log
+
+Contigs:
+  Pre-processing...
+  /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_15.fa ==> bin_15
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2020-05-19 12:46:13
+
+
+Running BlastN..
+  processing bin_15
+/home/lovilitt/.quast/blast/blastn -query /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_15.fa \
+-db /home/lovilitt/.quast/silva/silva.123.db -outfmt 7 -num_threads 2 > /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/quast_downloaded_references/blast.res_bin_15 \
+2>> /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/quast_downloaded_references/blast.err
+  BLAST results for bin_15 are saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/quast_downloaded_references/blast.res_bin_15...
+
+
+2020-05-19 12:46:23
+Trying to download found references from NCBI. Totally 1 organisms to try.
+  Psychroserpens_sp._PAMC_27130 | successfully downloaded (total 1, 0 more to go)
+
+Downloaded reference(s):
+  /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/quast_downloaded_references/Psychroserpens_sp._PAMC_27130.fasta ==> Psychroserpens_sp._PAMC_27130
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+(logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/combined_reference/quast.log)
+
+Excluding downloaded references with low genome fraction from further analysis..
+All downloaded references have low genome fraction. Nothing was excluded for now.
+
+Partitioning contigs into bins aligned to each reference..
+  processing bin_15
+
+Starting quast.py for the contigs aligned to Psychroserpens_sp._PAMC_27130... (logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/runs_per_reference/Psychroserpens_sp._PAMC_27130/quast.log)
+
+Starting quast.py for the contigs not aligned anywhere... (logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/not_aligned/quast.log)
+
+2020-05-19 12:47:28
+Summarizing results...
+  Drawing # contigs metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_contigs.pdf
+  Drawing Largest contig metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Largest_contig.pdf
+  Drawing Total length metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Total_length.pdf
+  Drawing Largest alignment metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Largest_alignment.pdf
+  Drawing Total aligned length metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Total_aligned_length.pdf
+  Drawing Total length (>= 1000 bp) metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Total_length_(>=_1000_bp).pdf
+  Drawing Total length (>= 10000 bp) metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Total_length_(>=_10000_bp).pdf
+  Drawing Total length (>= 50000 bp) metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Total_length_(>=_50000_bp).pdf
+  Drawing # misassemblies metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_misassemblies.pdf
+  Drawing metaQUAST summary misassemblies plot for bin_15...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/bin_15_misassemblies.pdf
+  Drawing Misassembled contigs length metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Misassembled_contigs_length.pdf
+  Drawing # mismatches per 100 kbp metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_mismatches_per_100_kbp.pdf
+  Drawing # indels per 100 kbp metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_indels_per_100_kbp.pdf
+  Drawing # N's per 100 kbp metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_N's_per_100_kbp.pdf
+  Drawing Genome fraction (%) metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Genome_fraction_(%).pdf
+  Drawing Duplication ratio metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Duplication_ratio.pdf
+  Drawing Avg contig read support metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/Avg_contig_read_support.pdf
+  Drawing # genes metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_genes.pdf
+  Drawing # operons metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_operons.pdf
+  Drawing NGA50 metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/NGA50.pdf
+  Drawing LGA50 metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/LGA50.pdf
+  Drawing # predicted genes (unique) metaQUAST summary plot...
+    saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/PDF/#_predicted_genes_(unique).pdf
+
+  Text versions of reports and plots for each metric (for all references and assemblies) are saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/summary/
+  Icarus (contig browser) is saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/icarus.html
+  Drawing interactive Krona plots...
+  Krona chart for bin_15 is saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/krona_charts/bin_15_taxonomy_chart.html
+  Extended version of HTML-report (for all references and assemblies) is saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/report.html
+
+MetaQUAST finished.
+  Log saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15/metaquast.log
+
+Finished: 2020-05-19 12:47:34
+Elapsed time: 0:01:22.034758
+Total NOTICEs: 5; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

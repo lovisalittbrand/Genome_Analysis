@@ -1,0 +1,52 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_6.fa -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2020-05-19 12:40:23
+
+Logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6/metaquast.log
+
+Contigs:
+  Pre-processing...
+  /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_6.fa ==> bin_6
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2020-05-19 12:40:23
+
+
+Running BlastN..
+  processing bin_6
+/home/lovilitt/.quast/blast/blastn -query /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_6.fa \
+-db /home/lovilitt/.quast/silva/silva.123.db -outfmt 7 -num_threads 2 > /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6/quast_downloaded_references/blast.res_bin_6 \
+2>> /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6/quast_downloaded_references/blast.err
+  BLAST results for bin_6 are saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6/quast_downloaded_references/blast.res_bin_6...
+
+
+2020-05-19 12:40:46
+Trying to download found references from NCBI. Totally 2 organisms to try.
+  Acidimicrobidae_bacterium_YM18-244 | not found in the NCBI database
+  Syntrophus_aciditrophicus          | successfully downloaded (total 1, 0 more to go)
+
+Downloaded reference(s):
+  /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6/quast_downloaded_references/Syntrophus_aciditrophicus.fasta ==> Syntrophus_aciditrophicus
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+(logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6/combined_reference/quast.log)
+
+Failed aligning the contigs for all the references. Try to use option --max-ref-number to change maximum number of references (per each assembly) to download.
+
+MetaQUAST finished.
+  Log saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6/metaquast.log
+
+Finished: 2020-05-19 12:40:55
+Elapsed time: 0:00:31.706683
+Total NOTICEs: 2; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

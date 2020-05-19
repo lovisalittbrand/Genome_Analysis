@@ -1,0 +1,37 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/metaquast.py -t 2 /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-1127.el7.x86_64-x86_64-with-centos-7.8.2003-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2020-05-19 12:48:16
+
+Logging to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/metaquast.log
+
+Contigs:
+  Pre-processing...
+  /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa ==> bin_23
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2020-05-19 12:48:17
+
+
+Running BlastN..
+  processing bin_23
+/home/lovilitt/.quast/blast/blastn -query /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa \
+-db /home/lovilitt/.quast/silva/silva.123.db -outfmt 7 -num_threads 2 > /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/quast_downloaded_references/blast.res_bin_23 \
+2>> /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/quast_downloaded_references/blast.err
+  BLAST results for bin_23 are saved to /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23/quast_downloaded_references/blast.res_bin_23...
+
+
+2020-05-19 12:48:20
+Trying to download found references from NCBI. Totally 1 organisms to try.
+marine metagenome has too fragmented reference genome! It will not be downloaded.
+  marine_metagenome | not found in the NCBI database
+Reference genomes are not found.
+
+NOTICE: No references are provided, starting regular QUAST with MetaGeneMark gene finder
