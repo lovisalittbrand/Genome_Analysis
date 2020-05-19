@@ -12,30 +12,30 @@ module load bioinfo-tools
 module load quast/4.5.4
 
 ##Commands for running binning evaluation from pooled assembly using MetaQuast
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_1.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_1
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_2.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_2
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_3.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_3
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_4.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_4
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_5.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_5
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_6.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_7.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_7
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_8.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_8
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_9.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_9
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_10.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_10
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_11.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_11
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_12.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_12
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_13.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_13
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_14.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_14
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_15.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_16.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_16
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_17.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_17
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_18.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_18
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_19.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_19
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_20.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_20
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_21.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_21
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_22.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_22
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_24.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_24
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_25.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_25
-metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_26.fa -t 2 –o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_26
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_1.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_1
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_2.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_2
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_3.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_3
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_4.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_4
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_5.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_5
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_6.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_6
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_7.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_7
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_8.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_8
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_9.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_9
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_10.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_10
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_11.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_11
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_12.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_12
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_13.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_13
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_14.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_14
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_15.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_15
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_16.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_16
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_17.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_17
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_18.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_18
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_19.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_19
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_20.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_20
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_21.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_21
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_22.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_22
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_23.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_23
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_24.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_24
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_25.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_25
+metaquast.py /home/lovilitt/Genome_Analysis/analyses/05a_binning/bin_26.fa -t 2 -o /home/lovilitt/Genome_Analysis/analyses/06a_binning_eval/metaquast/bin_26
 
