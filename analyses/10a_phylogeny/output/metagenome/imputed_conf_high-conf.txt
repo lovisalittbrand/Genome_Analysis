@@ -1,0 +1,10 @@
+bin_10	d__Bacteria.p__Planctomycetes.c__Planctomycetacia.o__Pirellulales.f__Pirellulaceae.g__?.s__?.t__?
+bin_23	d__Bacteria.p__Planctomycetes.c__Planctomycetacia.o__Pirellulales.f__Pirellulaceae.g__?.s__?.t__?
+bin_21	d__Bacteria.p__Acidobacteria.c__?.o__?.f__?.g__?.s__?.t__?
+bin_3	d__Bacteria.p__Acidobacteria.c__?.o__?.f__?.g__?.s__?.t__?
+bin_2	d__Bacteria.p__Planctomycetes.c__Planctomycetacia.o__Pirellulales.f__Pirellulaceae.g__?.s__?.t__?
+bin_1	d__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__?.f__?.g__?.s__?.t__?
+bin_8	d__Bacteria.p__Cyanobacteria.c__Synechococcophycidae.o__Synechococcales.f__Synechococcaceae.g__?.s__?.t__?
+bin_24	d__Bacteria.p__Acidobacteria.c__?.o__?.f__?.g__?.s__?.t__?
+bin_20	d__Bacteria.p__Acidobacteria.c__?.o__?.f__?.g__?.s__?.t__?
+bin_4	d__Archaea.p__Crenarchaeota.c__Thaumarchaeota.o__Nitrosopumilales.f__Nitrosopumilaceae.g__?.s__?.t__?
