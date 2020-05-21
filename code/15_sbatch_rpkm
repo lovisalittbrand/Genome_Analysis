@@ -8,9 +8,14 @@
 #SBATCH --mail-user lollo.littbrand@hotmail.com
 
 #Running all bins from site D1
+#for bin in bin_1 bin_2 bin_6 bin_7 bin_12 bin_16 bin_19 bin_24 bin_26;
+#do
+# python 14_convert_rpkm.py /home/lovilitt/Genome_Analysis/analyses/07a_annotation/$bin/$bin.gff /home/lovilitt/Genome_Analysis/analyses/09a_counting/${bin}_count_SiteD1.out ${bin}_rpkm_SiteD1
+#done
+
+#Running all bins from site D3
 for bin in bin_1 bin_2 bin_6 bin_7 bin_12 bin_16 bin_19 bin_24 bin_26;
 do
- python 14_convert_rpkm.py /home/lovilitt/Genome_Analysis/analyses/07a_annotation/$bin/$bin.gff /home/lovilitt/Genome_Analysis/analyses/09a_counting/${bin}_count_SiteD1.out result_rpkm_${bin}
+ python 14_convert_rpkm.py /home/lovilitt/Genome_Analysis/analyses/07a_annotation/$bin/$bin.gff /home/lovilitt/Genome_Analysis/analyses/09a_counting/${bin}_count_SiteD3.out ${bin}_rpkm_SiteD3
 done
-
 
