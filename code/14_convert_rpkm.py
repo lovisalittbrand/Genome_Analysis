@@ -40,7 +40,7 @@ for line in file_count_lines:
      
 
       # Running for all data from site D1
-      ks = 0.873799
+      ks = 0.732822
       rpkm = (float(feature_count)/ks)
       rpkm2 = rpkm/gene_length
       with open(result_file, "a") as file:
