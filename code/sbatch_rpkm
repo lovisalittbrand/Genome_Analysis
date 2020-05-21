@@ -1,0 +1,14 @@
+#!/bin/bash -l
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 02:00:00
+#SBATCH -J rpkm_run
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+
+
+
+python 14_convert_rpkm.py /home/lovilitt/Genome_Analysis/analyses/07a_annotation/bin_1/bin_1.gff /home/lovilitt/Genome_Analysis/analyses/09a_counting/bin_1_count_SiteD1.out
+
