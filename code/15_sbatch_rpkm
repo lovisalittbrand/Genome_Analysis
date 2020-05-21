@@ -1,0 +1,16 @@
+#!/bin/bash -l
+#SBATCH -A g2020008
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 02:00:00
+#SBATCH -J rpkm_run
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user lollo.littbrand@hotmail.com
+
+#Running all bins from site D1
+for bin in bin_1 bin_2 bin_6 bin_7 bin_12 bin_16 bin_19 bin_24 bin_26;
+do
+ python 14_convert_rpkm.py /home/lovilitt/Genome_Analysis/analyses/07a_annotation/$bin/$bin.gff /home/lovilitt/Genome_Analysis/analyses/09a_counting/${bin}_count_SiteD1.out result_rpkm_${bin}
+done
+
+
