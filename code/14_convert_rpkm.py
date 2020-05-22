@@ -28,21 +28,23 @@ for line in file_count_lines:
   for line2 in file_gff_lines:
    if line2.startswith('k'):
     split_line_gff = line2.split('\t')
+    
+    # Extract information about feature ID
     feature_info = split_line_gff[8]
     feature_id = feature_info.split("ID=")
     if (len(feature_id) > 1):
-     #with open(result_file, "a") as file:
-      #file.write(feature_id[1])
-    
-     # Matching ID in both files
+
+     # Matching ID in both count- and annotation-file
      if feature_id[1].startswith(feature_name):
       gene_length = float(split_line_gff[4]) - float(split_line_gff[3])
      
 
-      # Running for all data from site D1
+      # Computing RPKM for all data from site D1
       ks = 0.732822
       rpkm = (float(feature_count)/ks)
       rpkm2 = rpkm/gene_length
+      
+      # Writing the result to output file
       with open(result_file, "a") as file:
        file.write(feature_name + ' ' + str(rpkm2) + '\n')
 
