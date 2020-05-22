@@ -4,15 +4,16 @@
 # 3. Lastly, it normalizes the count by the number of reads per sample
 
 bin_list = [1, 2, 6, 7, 12, 16, 19, 24, 26]
-result_file = 'result_count_D3_max.txt'
+#bin_list = [16, 8]
+result_file = 'result_RPKM_D3_max.txt'
 
 with open(result_file, "a") as file:
     file.write('Bin' + ' ' + 'Feature_name' + ' ' + 'Count_D1' + ' ' + 'Count_D3' + '\n')
 
 for i in bin_list:
     # Defining the files corresponding to the specific bin
-    file = 'bin_' + str(i) + '_count_SiteD3.out'
-    file2 = 'bin_' + str(i) + '_count_SiteD1.out'
+    file = 'bin_' + str(i) + '_rpkm_SiteD3'
+    file2 = 'bin_' + str(i) + '_rpkm_SiteD1'
 
     # Counting the number of reads from each file
     result = []
@@ -30,14 +31,14 @@ for i in bin_list:
                 split_line = line.split()
 
                 # Second argument corresponds to number of reads mapped to a feature
-                if int(split_line[1]) > count_1:
-                    count_1 = int(split_line[1])
+                if float(split_line[1]) > count_1:
+                    count_1 = float(split_line[1])
                     name_feature_1 = split_line[0]
-                elif int(split_line[1]) > count_2:
-                    count_2 = int(split_line[1])
+                elif float(split_line[1]) > count_2:
+                    count_2 = float(split_line[1])
                     name_feature_2 = split_line[0]
-                elif int(split_line[1]) > count_3:
-                    count_3 = int(split_line[1])
+                elif float(split_line[1]) > count_3:
+                    count_3 = float(split_line[1])
                     name_feature_3 = split_line[0]
 
 
@@ -46,11 +47,11 @@ for i in bin_list:
         for line in file2:
             split_line = line.split()
             if split_line[0] == name_feature_1:
-                count_opposite_1 = int(split_line[1])
+                count_opposite_1 = float(split_line[1])
             elif split_line[0] == name_feature_2:
-                count_opposite_2 = int(split_line[1])
+                count_opposite_2 = float(split_line[1])
             elif split_line[0] == name_feature_3:
-                count_opposite_3 = int(split_line[1])
+                count_opposite_3 = float(split_line[1])
 
     # Writing result to file
     with open(result_file, "a") as file:
