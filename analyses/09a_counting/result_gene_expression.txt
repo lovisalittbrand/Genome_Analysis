@@ -1,0 +1,29 @@
+Bin_Site Count Count_no_features
+bin_1_D3 1431 729
+bin_1_D1 35 1110
+bin_2_D3 159 541
+bin_2_D1 224 4362
+bin_6_D3 1037 1470
+bin_6_D1 1954 7628
+bin_7_D3 518 1466
+bin_7_D1 476 4313
+bin_12_D3 2200 837
+bin_12_D1 1060 1599
+bin_16_D3 529 212
+bin_16_D1 1 18
+bin_19_D3 2042 509
+bin_19_D1 192 943
+bin_24_D3 4692 1046
+bin_24_D1 588 247
+bin_26_D3 2314 309
+bin_26_D1 1577 401
+
+Total_count_gene_D1 6107
+Total_count_no_feature 20621
+% contigs 0.030588270300149118
+% genes 0.006989021502656789
+
+Total_count_gene_D3 14922
+Total_count_no_feature 7119
+% contigs 0.025224336489284148
+% genes 0.017077153899237696
