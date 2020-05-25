@@ -22,6 +22,7 @@ genome_analysis_git/
 |    |---07a_annotation
 |    |---08a_mapping
 |    |---09a_counting
+|    |-—-10a_counting
 |
 |----code
 |    |---00_SetUp
@@ -38,6 +39,13 @@ genome_analysis_git/
 |    |—--10_Mapping
 |    |—--11_Counting
 |    |—--12_Phylogeny
+|    |—--13_Plot_binning
+|    |—--14_convert_rpkm.py
+|    |—--15_sbatch_rpkm
+|    |—--16_Count_analyze_3.py
+|    |—--16_Count_analyze_5.py
+|    |—--17_bin_expressed.py
+
 |
 |----data
 |    |---raw_data
